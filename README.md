@@ -20,7 +20,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-shrinkwrapsy');
 ```
 
-## The "shrinkwrap" task
+## The "shrinkwrapsy" task
 
 ### Overview
 In your project's Gruntfile, the `shrinkwrapsy` task is available to use.
