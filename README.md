@@ -28,5 +28,29 @@ In your project's Gruntfile, the `shrinkwrapsy` task is available to use.
 You can run `grunt shrinkwrapsy` standalone
 Or add it to an existing task: `grunt.registerTask('test', ['clean', 'shrinkwrapsy']);`
 
+### Options
+The `shrinkwrapsy`-task currently has four options.
+
+```javascript
+{
+  prune: true,
+  afterHooks: [],
+  beforeHooks: [],
+  devDependencies: true
+}
+```
+
+#### prune
+If set to `true` prune npm's dependencies before generating a shrinkwrap.
+
+#### beforeHooks
+A little array of shell commands which will be ran through `shelljs` before the any other operation is ran. Maybe useful for cleaning up some files or even removing some of npm's dependencies.
+
+#### afterHooks
+Kinda the same as `beforeHooks` only that it - wait for it - runs after all commands have finished running.
+
+### devDependencies
+Another boolean-flag indicating if the shrinkwrap should include npm's development dependencies. It transforms into the `--dev`-flag.
+
 ## Release History
 0.0.1 - First release.
