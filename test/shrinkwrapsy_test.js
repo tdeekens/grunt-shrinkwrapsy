@@ -8,7 +8,9 @@ exports.shrinkwrapsy = {
   tehtruth: function(test) {
     'use strict';
 
-    test.expect(0);
+    test.expect(1);
+
+    test.ok(true, "this assertion should pass");
 
     test.done();
   }
