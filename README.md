@@ -29,14 +29,17 @@ You can run `grunt shrinkwrapsy` standalone
 Or add it to an existing task: `grunt.registerTask('test', ['clean', 'shrinkwrapsy']);`
 
 ### Options
-The `shrinkwrapsy`-task currently has four options.
+The `shrinkwrapsy`-task currently has seven options.
 
 ```javascript
 {
   prune: true,
   afterHooks: [],
   beforeHooks: [],
-  devDependencies: true
+  devDependencies: true,
+  withoutDependencies: [],
+  withoutDevDependencies: [],
+  withoutPeerDependencies: []
 }
 ```
 
@@ -49,8 +52,17 @@ A little array of shell commands which will be ran through `shelljs` before the 
 #### afterHooks
 Kinda the same as `beforeHooks` only that it - wait for it - runs after all commands have finished running.
 
-### devDependencies
+#### devDependencies
 Another boolean-flag indicating if the shrinkwrap should include npm's development dependencies. It transforms into the `--dev`-flag.
+
+#### withoutDependencies
+An `[]` of dependencies names which shall be removed from the generated `npm-shrinkwrap.json`. Might sound a bit woozy but is applicable in cases you e.g. want to symlink forked repositories.
+
+#### withoutDevDependencies
+Same as the above only for the `devDependencies` of the `npm-shrinkwrap.json`.
+
+#### withoutPeerDependencies
+Again, same as the above only for the `peerDependencies` of the `npm-shrinkwrap.json`.
 
 ## Release History
 0.0.1 - First release.

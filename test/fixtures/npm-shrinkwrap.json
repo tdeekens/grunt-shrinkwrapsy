@@ -66,6 +66,11 @@
           "resolved": "https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz"
         }
       }
+    },
+    "shelljs": {
+      "version": "0.3.0",
+      "from": "shelljs@*",
+      "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.3.0.tgz"
     }
   }
 }
