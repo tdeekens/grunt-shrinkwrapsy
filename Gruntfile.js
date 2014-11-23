@@ -4,6 +4,8 @@ module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
 
+  grunt.loadNpmTasks('grunt-shrinkwrapsy');
+
   var path = require('path');
 
   require('load-grunt-config')(grunt, {

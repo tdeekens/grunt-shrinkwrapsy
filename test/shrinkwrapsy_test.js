@@ -5,12 +5,13 @@ exports.shrinkwrapsy = {
   setUp: function(done) {
     done();
   },
-  tehtruth: function(test) {
-    'use strict';
-
+  compare_shrinkwraps: function(test) {
     test.expect(1);
 
-    test.ok(true, "this assertion should pass");
+    var expected = grunt.file.read('test/fixtures/npm-shrinkwrap.json');
+    var actual = grunt.file.read('npm-shrinkwrap.json');
+
+    test.equal(actual, expected, 'should have generated the same npm-shrinkwrap.json');
 
     test.done();
   }

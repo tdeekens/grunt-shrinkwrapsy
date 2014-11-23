@@ -4,6 +4,8 @@
     "nodeunit"
   ],
   "test": [
+    "shell:shrinkwrap",
+    "shrinkwrapsy",
     "nodeunit"
   ]
 }
