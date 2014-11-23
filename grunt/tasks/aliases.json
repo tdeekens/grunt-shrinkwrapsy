@@ -1,0 +1,9 @@
+{
+  "default": [
+    "jshint",
+    "nodeunit"
+  ],
+  "test": [
+    "nodeunit"
+  ]
+}
