@@ -2,6 +2,8 @@
 
 > Grunt task for shrink wrapping your project's dependencies via npm shrinkwrap
 
+[![Build Status](https://travis-ci.org/tdeekens/grunt-shrinkwrapsy.svg?branch=master)](https://travis-ci.org/tdeekens/grunt-shrinkwrapsy)
+
 ## Getting Started
 This plugin requires Grunt `~0.4.2`
 
