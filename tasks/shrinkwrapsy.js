@@ -51,17 +51,32 @@ module.exports = function(grunt) {
 
     options.withoutDependencies.forEach(function(dependency) {
       grunt.log.ok(['Removing specified dependency: ' + dependency + '.']);
-      delete shrinkwrap.dependencies[dependency];
+
+      if (shrinkwrap.dependencies[dependency]) {
+        delete shrinkwrap.dependencies[dependency];
+      } else {
+        grunt.log.error(['Could not find dependency in shinkwrap!']);
+      }
     });
 
     options.withoutDevDependencies.forEach(function(dependency) {
       grunt.log.ok(['Removing specified devDependency: ' + dependency + '.']);
-      delete shrinkwrap.devDependencies[dependency];
+
+      if (shrinkwrap.devDependencies[dependency]) {
+        delete shrinkwrap.devDependencies[dependency];
+      } else {
+        grunt.log.error(['Could not find dev dependency in shinkwrap!']);
+      }
     });
 
     options.withoutPeerDependencies.forEach(function(dependency) {
       grunt.log.ok(['Removing specified peerDependency: ' + dependency + '.']);
-      delete shrinkwrap.peerDependencies[dependency];
+
+      if (shrinkwrap.peerDependencies[dependency]) {
+        delete shrinkwrap.peerDependencies[dependency];
+      } else {
+        grunt.log.error(['Could not find peer dependency in shinkwrap!']);
+      }
     });
 
     modifiedDependencies = (
