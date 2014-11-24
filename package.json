@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tdeekens/npm-shrinkwrapsy.git"
+    "url": "https://github.com/tdeekens/grunt-shrinkwrapsy.git"
   },
   "keywords": [
     "grunt",
@@ -19,9 +19,9 @@
   "author": "Tobias Deekens <nerd@tdeekens.name> (http://tdeekens.name)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tdeekens/npm-shrinkwrapsy/issues"
+    "url": "https://github.com/tdeekens/grunt-shrinkwrapsyissues"
   },
-  "homepage": "https://github.com/tdeekens/npm-shrinkwrapsy",
+  "homepage": "https://github.com/tdeekens/grunt-shrinkwrapsy",
   "dependencies": {
     "shelljs": "^0.3.0"
   },
