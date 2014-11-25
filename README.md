@@ -66,3 +66,6 @@ Again, same as the above only for the `peerDependencies` of the `npm-shrinkwrap.
 
 ## Release History
 0.0.1 - First release.
+0.0.2 - Adds support for removing dependencies.
+0.0.3 - Makes removing dependencies more failsave.
+0.1.0 - Release of first minor, proven stable.

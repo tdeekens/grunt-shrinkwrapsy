@@ -1,6 +1,6 @@
 {
   "name": "grunt-shrinkwrapsy",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A grunt plugin to create a npm-shrinkwrap.",
   "scripts": {
     "test": "grunt test"
@@ -19,7 +19,7 @@
   "author": "Tobias Deekens <nerd@tdeekens.name> (http://tdeekens.name)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tdeekens/grunt-shrinkwrapsyissues"
+    "url": "https://github.com/tdeekens/grunt-shrinkwrapsy/issues"
   },
   "homepage": "https://github.com/tdeekens/grunt-shrinkwrapsy",
   "dependencies": {
