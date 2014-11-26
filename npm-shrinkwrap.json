@@ -1,6 +1,6 @@
 {
   "name": "grunt-shrinkwrapsy",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "dependencies": {
     "grunt-cli": {
       "version": "0.1.13",
