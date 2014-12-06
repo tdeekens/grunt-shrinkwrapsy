@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/tdeekens/grunt-shrinkwrapsy.svg?branch=master)](https://travis-ci.org/tdeekens/grunt-shrinkwrapsy)
 [![Build Status](https://drone.io/github.com/tdeekens/grunt-shrinkwrapsy/status.png)](https://drone.io/github.com/tdeekens/grunt-shrinkwrapsy/latest)
 [![Circle CI](https://circleci.com/gh/tdeekens/grunt-shrinkwrapsy/tree/master.svg?style=svg)](https://circleci.com/gh/tdeekens/grunt-shrinkwrapsy/tree/master)
+[![Dependency Status](https://david-dm.org/tdeekens/grunt-shrinkwrapsy#badge-embed)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.2`
