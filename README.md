@@ -2,6 +2,8 @@
 
 > Grunt task for shrink wrapping your project's dependencies via npm shrinkwrap
 
+[![NPM](https://nodei.co/npm/grunt-shrinkwrapsy.png?mini=true)](https://nodei.co/npm/grunt-shrinkwrapsy/)
+
 [![Build Status](https://travis-ci.org/tdeekens/grunt-shrinkwrapsy.svg?branch=master)](https://travis-ci.org/tdeekens/grunt-shrinkwrapsy)
 [![Build Status](https://drone.io/github.com/tdeekens/grunt-shrinkwrapsy/status.png)](https://drone.io/github.com/tdeekens/grunt-shrinkwrapsy/latest)
 [![Circle CI](https://circleci.com/gh/tdeekens/grunt-shrinkwrapsy/tree/master.svg?style=svg)](https://circleci.com/gh/tdeekens/grunt-shrinkwrapsy/tree/master)
