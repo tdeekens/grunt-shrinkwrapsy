@@ -5,3 +5,5 @@ before_install:
   - npm install -g grunt-cli
   - npm link
   - npm link grunt-shrinkwrapsy
+notifications:
+  email: false
