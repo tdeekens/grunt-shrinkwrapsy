@@ -36,7 +36,6 @@ module.exports = function(grunt) {
 
     if (options.prune === true) {
       grunt.log.ok(['Pruning npm dependencies.']);
-
       shelljs.exec('npm prune');
     }
 
@@ -50,32 +49,29 @@ module.exports = function(grunt) {
     shrinkwrap = require(pwd + '/npm-shrinkwrap.json');
 
     options.withoutDependencies.forEach(function(dependency) {
-      grunt.log.ok(['Removing specified dependency: ' + dependency + '.']);
-
       if (shrinkwrap.dependencies[dependency]) {
+        grunt.log.ok(['Removing specified dependency: ' + dependency + '.']);
         delete shrinkwrap.dependencies[dependency];
       } else {
-        grunt.log.error(['Could not find dependency in shinkwrap!']);
+        grunt.log.warn(['Could not find specified dependency ' + dependency + ' in shrinkwrap!']);
       }
     });
 
     options.withoutDevDependencies.forEach(function(dependency) {
-      grunt.log.ok(['Removing specified devDependency: ' + dependency + '.']);
-
       if (shrinkwrap.devDependencies[dependency]) {
+        grunt.log.ok(['Removing specified devDependency: ' + dependency + '.']);
         delete shrinkwrap.devDependencies[dependency];
       } else {
-        grunt.log.error(['Could not find dev dependency in shinkwrap!']);
+        grunt.log.warn(['Could not find specified devDependency ' + dependency + ' in shrinkwrap!']);
       }
     });
 
     options.withoutPeerDependencies.forEach(function(dependency) {
-      grunt.log.ok(['Removing specified peerDependency: ' + dependency + '.']);
-
       if (shrinkwrap.peerDependencies[dependency]) {
+        grunt.log.ok(['Removing specified peerDependency: ' + dependency + '.']);
         delete shrinkwrap.peerDependencies[dependency];
       } else {
-        grunt.log.error(['Could not find peer dependency in shinkwrap!']);
+        grunt.log.warn(['Could not find specified peerDependency ' + dependency + ' in shrinkwrap!']);
       }
     });
 
