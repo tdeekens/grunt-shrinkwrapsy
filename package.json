@@ -1,6 +1,6 @@
 {
   "name": "grunt-shrinkwrapsy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A grunt plugin to create a npm-shrinkwrap.",
   "scripts": {
     "test": "grunt test"
