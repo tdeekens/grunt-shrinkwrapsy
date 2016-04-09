@@ -73,3 +73,4 @@ Again, same as the above only for the `peerDependencies` of the `npm-shrinkwrap.
 - 0.0.2 - Adds support for removing dependencies.
 - 0.0.3 - Makes removing dependencies more failsave.
 - 0.1.0 - Release of first minor, proven stable.
+- 1.0.0 Update dependencies and add engine requirements

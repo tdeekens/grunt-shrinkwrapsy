@@ -1,6 +1,6 @@
 {
   "name": "grunt-shrinkwrapsy",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A grunt plugin to create a npm-shrinkwrap.",
   "scripts": {
     "test": "grunt test"
@@ -8,6 +8,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tdeekens/grunt-shrinkwrapsy.git"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.5.0"
   },
   "keywords": [
     "grunt",
@@ -23,19 +27,23 @@
   },
   "homepage": "https://github.com/tdeekens/grunt-shrinkwrapsy",
   "dependencies": {
-    "shelljs": "^0.3.0"
+    "shelljs": "0.6.0"
+  },
+  "optionalDependencies": {
+    "grunt-shrinkwrapsy": ">=1.0.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-jshint": "1.0.0",
+    "grunt-contrib-nodeunit": "1.0.0",
     "grunt-shell": "^1.1.1",
-    "load-grunt-config": "^0.16.0",
+    "load-grunt-config": "firstandthird/load-grunt-config#bc1f14e",
     "time-grunt": "^1.0.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-cli": "~0.1.1"
+    "grunt": ">=0.4.0",
+    "grunt-cli": ">=0.1.13"
   }
 }
